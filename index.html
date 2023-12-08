@@ -39,6 +39,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
 
@@ -327,16 +328,18 @@
         <h2 class="title is-3">Method</h2>
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Where and How to put the object.  </h3>
+<!--        <h3 class="title is-4">Where and How to put the object.  </h3>-->
         <div class="content has-text-justified">
           <p>
+            <b>Where and How to put the object.</b>
             3D Copy-Paste first identifies physically feasible locations and poses for the inserted objects to prevent
             collisions with the existing room layout.
           </p>
-        </div>
-                <h3 class="title is-4">What illumination is on the object.  </h3>
-        <div class="content has-text-justified">
+<!--        </div>-->
+<!--                <h3 class="title is-4">What illumination is on the object.  </h3>-->
+<!--        <div class="content has-text-justified">-->
           <p>
+            <b>What illumination is on the object.</b>
             3D Copy-Paste estimates spatially varying illumination for the insertion location, enabling the immersive
             blending of the virtual objects into the original scene with plausible appearances and cast shadows.
           </p>
@@ -352,65 +355,65 @@
     <!--/ Method. -->
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Method. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">AI-generated data to train models</h2>
+<!--<section class="section">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    &lt;!&ndash; Method. &ndash;&gt;-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">AI-generated data to train models</h2>-->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Physically-plausible position, pose, size, and illumination leads to better monocular
-detection performance  </h3>
-        <div class="content has-text-centered">
-          <img src="./static/images/Table-1.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            3D Copy-Paste, which conducts physically plausible insertion, can help train a SOTA monocular 3D object detection model.
-          </p>
-        </div>
+<!--        &lt;!&ndash; Re-rendering. &ndash;&gt;-->
+<!--        <h3 class="title is-4">Physically-plausible position, pose, size, and illumination leads to better monocular-->
+<!--detection performance  </h3>-->
+<!--        <div class="content has-text-centered">-->
+<!--          <img src="./static/images/Table-1.png"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--        </div>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            3D Copy-Paste, which conducts physically plausible insertion, can help train a SOTA monocular 3D object detection model.-->
+<!--          </p>-->
+<!--        </div>-->
 
-        <h3 class="title is-4">Ablation study on the influence of insertion illumination and position on monocular 3D
-object detection  </h3>
-         <div class="content has-text-centered">
-          <img src="./static/images/Fig-3.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Visualization of different kinds of illumination on inserted objects.
-          </p>
-        </div>
+<!--        <h3 class="title is-4">Ablation study on the influence of insertion illumination and position on monocular 3D-->
+<!--object detection  </h3>-->
+<!--         <div class="content has-text-centered">-->
+<!--          <img src="./static/images/Fig-3.png"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--        </div>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            Visualization of different kinds of illumination on inserted objects.-->
+<!--          </p>-->
+<!--        </div>-->
 
-                 <div class="content has-text-centered">
-          <img src="./static/images/Table-2.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            ImVoxelNet 3D monocular object detection performance on SUN RGB-D dataset with different kinds of illumination during insertion rendering.
+<!--                 <div class="content has-text-centered">-->
+<!--          <img src="./static/images/Table-2.png"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--        </div>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            ImVoxelNet 3D monocular object detection performance on SUN RGB-D dataset with different kinds of illumination during insertion rendering.-->
 
-          </p>
-        </div>
+<!--          </p>-->
+<!--        </div>-->
 
-                         <div class="content has-text-centered">
-          <img src="./static/images/Table-3.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            Considering the global context (semantic relationship of the inserted object to the whole scene) during the insertion is on par with the
-            random category selecting setting, the following downstream detection model may not be sensitive to that.
+<!--                         <div class="content has-text-centered">-->
+<!--          <img src="./static/images/Table-3.png"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--        </div>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            Considering the global context (semantic relationship of the inserted object to the whole scene) during the insertion is on par with the-->
+<!--            random category selecting setting, the following downstream detection model may not be sensitive to that.-->
 
 
-          </p>
-        </div>
+<!--          </p>-->
+<!--        </div>-->
 
         <!--/ Re-rendering. -->
       </div>
