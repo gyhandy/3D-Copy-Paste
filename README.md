@@ -7,7 +7,6 @@
 </div>
 
 
-
 ## Detailed steps.
 
 Overview: the following steps conduct 3D Copy Paste by inserting [Objaverse](https://objaverse.allenai.org/) objects into [SUN RGB-D](https://rgbd.cs.princeton.edu/) dataset. The insertion and rendering use [Blender](https://www.blender.org/). Then train an [ImvoxelNet](https://github.com/SamsungLabs/imvoxelnet) model for monocular 3D object detection using [MMdetection3D](https://github.com/open-mmlab/mmdetection3d) code. 
@@ -211,3 +210,4 @@ Copy training config file in our imvoxelnet folder to mmdetection3d/configs/imvo
 bash tools/dist_train.sh \
   configs/imvoxelnet/config_insertion_ilog2_istren2_context.py 2
 ``` 
+
